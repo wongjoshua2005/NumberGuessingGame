@@ -43,17 +43,15 @@ while True:
 
         numOfTries += 1
 
-    # Checks for when the user reaches maximum tries and did not guess correctly
-    if numOfTries == 6:
-        print("Sorry. It looks like you lost the game. Try again?")
-        retry = input("Enter either Y or N: ") # Gives the user ability to retry
+    print("Sorry. It looks like you lost the game. Try again?")
+    retry = input("Enter either Y or N: ") # Gives the user ability to retry
 
-        # Checks choices if the user wants to quit the game or not
-        match retry:
-            case "Y":
-                continue
-            case "N":
-                exit()
-            case _:
-                print("Assume you want to quit.")
-                exit()
+    # Checks choices if the user wants to quit the game or not
+    match retry:
+        case "Y":
+            continue
+        case "N":
+            exit()
+        case _:
+            print("Automatically assumes any other choice means to exit.")
+            exit()
