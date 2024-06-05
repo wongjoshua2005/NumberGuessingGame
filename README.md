@@ -1,0 +1,1 @@
+The purpose of this project is become more familiar of python again, since I did not use python since high school. The program simply does a guessing game in the terminal, and the user has 6 tries to guess the right number depending on the range they select.
